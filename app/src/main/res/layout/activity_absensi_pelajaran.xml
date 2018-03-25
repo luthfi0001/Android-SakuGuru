@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCEBB6"
+    tools:context="com.elkha.zik.sakuguru.AbsensiPelajaran">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/exbar"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:background="#5E412F"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/textNewAbsensiPelajaran"
+            android:textSize="8sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/headerColor"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:background="#FCEBB6"
+            android:id="@+id/chooseEdit"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:entries="@array/country_arrays">
+        </Spinner>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="90dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listAbsen"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#4c000000"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/exbar">
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/alfaButton"
+                android:background="@color/alfaButtonColor"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:onClick="alfaAct" />
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/sakitButton"
+                android:background="@color/sakitButtonColor"
+                android:layout_toLeftOf="@id/alfaButton"
+                android:layout_marginRight="5dp"
+                android:onClick="alfaAct" />
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/izinButton"
+                android:layout_toLeftOf="@id/sakitButton"
+                android:background="@color/izinButtonColor"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@id/izinButton"
+                android:id="@+id/hadirButton"
+                android:background="@color/hadirButtonColor"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

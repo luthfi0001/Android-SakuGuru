@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#5e412f</color>
+    <color name="headerColor">#78c0a8</color>
+    <color name="backgroundColor">#fdf1ce</color>
+    <color name="layoutColor">#fcebb6</color>
+    <color name="orenColor">#f07818</color>
+    <color name="sakitButtonColor">#ffd700</color>
+    <color name="izinButtonColor">#b0e0e6</color>
+    <color name="alfaButtonColor">#e53e00</color>
+    <color name="hadirButtonColor">#12c23f</color>
+</resources>

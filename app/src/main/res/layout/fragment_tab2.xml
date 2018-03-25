@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.elkha.zik.sakuguru.Tab2">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_plus" />
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#78c0a8"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fdf1ce"
+                android:padding="20dp"
+                android:text="@string/fotoFr1" />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/foto"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:text="@string/nama_user"
+                android:textColor="@color/textColor"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/nip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama"
+                android:layout_toRightOf="@id/foto"
+                android:paddingLeft="10dp"
+                android:text="@string/contohNimFr1"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:padding="18dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/folder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/backgroundColor"
+                    android:src="@drawable/folder4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/folder1"
+                    android:text="@string/contohRppFr2"
+                    android:textColor="@color/textColor" />
+
+                <ImageButton
+                    android:id="@+id/folder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/folder1"
+                    android:background="@color/backgroundColor"
+                    android:src="@drawable/folder4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/folder2"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/folder1"
+                    android:text="@string/contohRpp2Fr2"
+                    android:textColor="@color/textColor" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

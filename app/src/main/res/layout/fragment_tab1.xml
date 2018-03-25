@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elkha.zik.sakuguru.Tab1"
+    android:background="@color/backgroundColor">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@drawable/border">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#78c0a8"
+            android:padding="16dp"
+            android:id="@+id/profile">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/fotoFr1"
+                android:background="#fdf1ce"
+                android:id="@+id/foto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_user"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                android:id="@+id/nama"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_toRightOf="@id/foto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contohNimFr1"
+                android:id="@+id/nip"
+                android:textSize="14dp"
+                android:textColor="@color/textColor"
+                android:layout_toRightOf="@id/foto"
+                android:layout_below="@id/nama"
+                android:paddingLeft="10dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:background="@color/textColor"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/dateNow"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dateFr1"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_jadwal"
+            android:layout_below="@id/time"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"></ListView>
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_plus" />
+
+</FrameLayout>
